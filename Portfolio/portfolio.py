@@ -20,7 +20,7 @@ def main():
                 html = '<img src onerror="{}">'.format(js)
                 div = Div(text=html)
                 st.bokeh_chart(div)  
-            with open("https://github.com/adityabachu/My-Portfolio/blob/main/Portfolio/Aditya%20Bachu%20Resume.pdf", "rb") as file:
+            with open("Portfolio/Aditya Bachu Resume.pdf", "rb") as file:
                  btn = st.download_button(
                     label="Download Resume 📥",
                     data=file,
