@@ -39,7 +39,7 @@ def show_about_section():
     st.write("But what truly sets my heart on fire is Artificial Intelligence and Machine Learning. 🧠🤖 Exploring the endless possibilities of these cutting-edge technologies fascinates me beyond words. From diving into natural language processing to unraveling the mysteries of computer vision, I'm constantly driven to push the boundaries of AI and ML. 🌐")
     st.write("So, that's a glimpse of who I am—a GSSoC Contributor'23, Google DSC Core Team'22 member, 5 ⭐ Coder at HackerRank, and a tech enthusiast with an insatiable passion for Artificial Intelligence and Machine Learning. 🌟✨ I'm excited to continue my journey, embrace new challenges, and make a lasting impact in the world of technology! 🚀💡")
 def show_work_experience():
-    image = Image.open("Portfolio/Images/GDSC (3).jpg")
+    image = Image.open("https://github.com/adityabachu/My-Portfolio/blob/main/Portfolio/Images/GDSC%20(3).jpg")
     st.image(image, caption='Image Caption', use_column_width=True)
 
 def show_skills_section():
