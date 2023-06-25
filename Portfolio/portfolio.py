@@ -9,7 +9,9 @@ def main():
         
     
         if page == "About":
-            show_about_section()
+            show_about_section()
+        elif page == "Work Experience":
+            show_work_experience()
         elif page == "Skills":
             show_skills_section()
         elif page == "Contact":
@@ -17,7 +19,16 @@ def main():
         with st.sidebar:
             components.html('<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="adityabachu" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/adityabachu?trk=profile-badge"></a></div>', height = 360 )
             if st.button("Github 👨‍💻"):
-                js = "window.open('https://github.com/adityabachu')"  
+                js = "window.open('https://github.com/adityabachu')"
+                html = '<img src onerror="{}">'.format(js)
+                div = Div(text=html)
+                st.bokeh_chart(div)  
+            with open("Portfolio/Aditya Bachu Resume.pdf", "rb") as file:
+                 btn = st.download_button(
+                    label="Download Resume 📥",
+                    data=file,
+                    file_name="ADITYA BACHU RESUME.pdf"
+        )
     
 
 def show_about_section():
@@ -26,7 +37,10 @@ def show_about_section():
     st.write("As a GSSoC Contributor'23, I had the incredible opportunity to work on exciting projects and contribute to the tech community. 🌟 Being a part of the Google DSC Core Team'22 was an absolute game-changer for me. It allowed me to collaborate with brilliant minds, organize impactful events, and foster a vibrant tech ecosystem. 🎉")
     st.write("When it comes to coding, I take immense pride in being recognized as a 5 ⭐ Coder at HackerRank. 💻 Solving challenging coding problems has always been my passion, and this achievement truly validates my skills. 🔥")
     st.write("But what truly sets my heart on fire is Artificial Intelligence and Machine Learning. 🧠🤖 Exploring the endless possibilities of these cutting-edge technologies fascinates me beyond words. From diving into natural language processing to unraveling the mysteries of computer vision, I'm constantly driven to push the boundaries of AI and ML. 🌐")
-    st.write("So, that's a glimpse of who I am—a GSSoC Contributor'23, Google DSC Core Team'22 member, 5 ⭐ Coder at HackerRank, and a tech enthusiast with an insatiable passion for Artificial Intelligence and Machine Learning. 🌟✨ I'm excited to continue my journey, embrace new challenges, and make a lasting impact in the world of technology! 🚀💡")
+    st.write("So, that's a glimpse of who I am—a GSSoC Contributor'23, Google DSC Core Team'22 member, 5 ⭐ Coder at HackerRank, and a tech enthusiast with an insatiable passion for Artificial Intelligence and Machine Learning. 🌟✨ I'm excited to continue my journey, embrace new challenges, and make a lasting impact in the world of technology! 🚀💡")
+def show_work_experience():
+    image = Image.open('Portfolio/Images/GDSC (3).jpg')
+    st.image(image, caption='Image Caption', use_column_width=True)
     
 
 def show_contact_section():
