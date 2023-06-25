@@ -17,16 +17,7 @@ def main():
         with st.sidebar:
             components.html('<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="adityabachu" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/adityabachu?trk=profile-badge"></a></div>', height = 360 )
             if st.button("Github 👨‍💻"):
-                js = "window.open('https://github.com/adityabachu')"  # New tab or window
-                html = '<img src onerror="{}">'.format(js)
-                div = Div(text=html)
-                st.bokeh_chart(div)  
-            with open("https://github.com/adityabachu/My-Portfolio/blob/main/Portfolio/Aditya%20Bachu%20Resume.pdf", "rb") as file:
-                 btn = st.download_button(
-                    label="Download Resume 📥",
-                    data=file,
-                    file_name="ADITYA BACHU RESUME.pdf"
-        )
+                js = "window.open('https://github.com/adityabachu')"  
     
 
 def show_about_section():
