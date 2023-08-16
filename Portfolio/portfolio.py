@@ -1,11 +1,13 @@
-import streamlit as st
+import streamlit as st 
 import streamlit.components.v1 as components
-from bokeh.models.widgets import Div
 from PIL import Image
+import pandas as pd
+import webbrowser
+from bokeh.models.widgets import Div
 
 def main():
         st.sidebar.title("Navigation")
-        page = st.sidebar.selectbox("Go to", ["About", "Work Experience", "Skills", "Contact"])
+        page = st.sidebar.selectbox("Go to", ["About", "Work Experience", "Skills", "Projects", "Contact"])
         
     
         if page == "About":
@@ -16,6 +18,8 @@ def main():
             show_skills_section()
         elif page == "Contact":
             show_contact_section()
+        elif page == "Projects":
+            show_projects_section()
         with st.sidebar:
             components.html('<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="adityabachu" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/adityabachu?trk=profile-badge"></a></div>', height = 360 )
             if st.button("Github 👨‍💻"):
@@ -64,6 +68,33 @@ def show_contact_section():
         """,
         unsafe_allow_html=True
     )
+
+def show_projects_section():
+    st.title('Projects')
+    st.subheader('Covid Data Visualization')
+
+    st.write('This project is focused on analyzing and visualizing the screen time usage of individuals. The dataset used in this project was sourced from the internet and includes information about the amount of time spent by individuals on screens')
+    st.write('The analysis is performed using Python programming language with the help of numpy and pandas libraries for data manipulation and analysis. The plotly library is used for data visualization and creating interactive visualizations that help in understanding the data more effectively.')
+    st.write('Furthermore, the project includes an interactive web application created using streamlit library that allows users to explore and interact with the data.')
+
+    if st.button('Show Project', key = 54):
+      js = "window.open('https://github.com/adityabachu/Covid-Data-Visualization-using-R/tree/main/')"  # New tab or window
+      html = '<img src onerror="{}">'.format(js)
+      div = Div(text=html)
+      st.bokeh_chart(div) 
+
+    st.subheader('Screen Time Analysis')
+
+    st.write('This project is focused on analyzing and visualizing the screen time usage of individuals. The dataset used in this project was sourced from the internet and includes information about the amount of time spent by individuals on screens')
+    st.write('The analysis is performed using Python programming language with the help of numpy and pandas libraries for data manipulation and analysis. The plotly library is used for data visualization and creating interactive visualizations that help in understanding the data more effectively.')
+    st.write('Furthermore, the project includes an interactive web application created using streamlit library that allows users to explore and interact with the data.')
+
+    if st.button('Show Project', key = 55):
+      js = "window.open('https://screen-time-analysis.streamlit.app/')"  # New tab or window
+      html = '<img src onerror="{}">'.format(js)
+      div = Div(text=html)
+      st.bokeh_chart(div) 
+  
 
 if __name__ == '__main__':
     main()
