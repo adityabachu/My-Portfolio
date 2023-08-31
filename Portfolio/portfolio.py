@@ -73,6 +73,15 @@ def show_contact_section():
 def show_projects_section():
     st.title('Projects')
 
+    st.subheader('Spam Detection')
+    st.write("The Spam Detection System project is designed to automatically identify and filter out spam. Using machine learning algorithms and natural language processing techniques, the system analyzes the content and context of the input, determining whether it is legitimate or spam. By accurately categorizing and flagging spam")
+
+    if st.button('Show Project', key = 52):
+      js = "window.open('https://colab.research.google.com/drive/1Ut6uHN9oGJudzqqFUyqHsoga7BUp7M7S')"  
+      html = '<img src onerror="{}">'.format(js)
+      div = Div(text=html)
+      st.bokeh_chart(div)    
+
     st.subheader('Tic-Tac-Toe')
     st.write("The Java Tic Tac Toe Game project is a console-based application that allows two players to play the classic Tic Tac Toe game.")
     st.write("Developed in Java, the project features a user-friendly interface for players to take turns and make their moves on the game board.") 
