@@ -102,6 +102,7 @@ def show_projects_section():
 
     if st.button('Show Project', key = 53):
       js = "window.open('https://replit.com/@BachuAditya/Tic-Tac-Toe')"  
+      js = "window.location.href = 'https://replit.com/@BachuAditya/Tic-Tac-Toe'"      
       html = '<img src onerror="{}">'.format(js)
       div = Div(text=html)
       st.bokeh_chart(div)    
