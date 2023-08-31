@@ -47,14 +47,7 @@ def show_activities():
     st.write("As a core team member of Google DSC, I played a vital role in organizing and leading various tech-related events, workshops, and sessions for students in collaboration with Google and the local developer community. I contributed to event planning, content creation, and mentoring participants in coding and technology skills. This experience enhanced my leadership, communication, and technical skills, and allowed me to foster a vibrant tech community on campus.")    
 
     st.title('[Website](https://gdsc.community.dev/anurag-university-hyderabad/)')  
-      
-
-    if st.button('My Badge ✅', key = 62):
-      js = "window.open('https://developers.google.com/profile/badges/community/dsc/2022/core-member?authuser=2')"  
-      html = '<img src onerror="{}">'.format(js)
-      div = Div(text=html)
-      st.bokeh_chart(div)
-    
+    st.title('[My Badge ✅](https://developers.google.com/profile/badges/community/dsc/2022/core-member?authuser=2)')  
 
 def show_contact_section():
     st.header("Contact")
@@ -84,11 +77,7 @@ def show_projects_section():
     st.subheader('Spam Detection')
     st.write("The Spam Detection System project is designed to automatically identify and filter out spam. Using machine learning algorithms and natural language processing techniques, the system analyzes the content and context of the input, determining whether it is legitimate or spam. By accurately categorizing and flagging spam")
 
-    if st.button('Show Project', key = 52):
-      js = "window.open('https://colab.research.google.com/drive/1Ut6uHN9oGJudzqqFUyqHsoga7BUp7M7S')"  
-      html = '<img src onerror="{}">'.format(js)
-      div = Div(text=html)
-      st.bokeh_chart(div)    
+    st.title("[Show Project](https://colab.research.google.com/drive/1Ut6uHN9oGJudzqqFUyqHsoga7BUp7M7)")   
 
     st.subheader('Tic-Tac-Toe')
     st.write("The Java Tic Tac Toe Game project is a console-based application that allows two players to play the classic Tic Tac Toe game.")
