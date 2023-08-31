@@ -166,6 +166,7 @@ def show_certifications_section():
         image = Image.open(cert['image'])
         st.image(image, width = 100)
         st.subheader("[View Certificate](%s)" % cert['link'])
+        st.write("-----")
 
 
             
