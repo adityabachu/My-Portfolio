@@ -46,7 +46,7 @@ def show_about_section():
 def show_activities():
     st.subheader("Google DSC Core Team - Data Analytics Lead")    
     image = Image.open('Portfolio/Images/GDSC (3).jpg')
-    st.image(image, width = 100)
+    st.image(image, width = 200)
     st.write("As a core team member of Google DSC, I played a vital role in organizing and leading various tech-related events, workshops, and sessions for students in collaboration with Google and the local developer community. I contributed to event planning, content creation, and mentoring participants in coding and technology skills. This experience enhanced my leadership, communication, and technical skills, and allowed me to foster a vibrant tech community on campus.")    
         
     
