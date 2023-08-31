@@ -46,8 +46,8 @@ def show_activities():
     st.image(image, width = 200)
     st.write("As a core team member of Google DSC, I played a vital role in organizing and leading various tech-related events, workshops, and sessions for students in collaboration with Google and the local developer community. I contributed to event planning, content creation, and mentoring participants in coding and technology skills. This experience enhanced my leadership, communication, and technical skills, and allowed me to foster a vibrant tech community on campus.")    
 
-    st.title('[Website](https://gdsc.community.dev/anurag-university-hyderabad/)')  
-    st.title('[My Badge ✅](https://developers.google.com/profile/badges/community/dsc/2022/core-member?authuser=2)')  
+    st.subheader('[Website](https://gdsc.community.dev/anurag-university-hyderabad/)')  
+    st.subheader('[My Badge ✅](https://developers.google.com/profile/badges/community/dsc/2022/core-member?authuser=2)')  
 
 def show_contact_section():
     st.header("Contact")
@@ -77,7 +77,7 @@ def show_projects_section():
     st.subheader('Spam Detection')
     st.write("The Spam Detection System project is designed to automatically identify and filter out spam. Using machine learning algorithms and natural language processing techniques, the system analyzes the content and context of the input, determining whether it is legitimate or spam. By accurately categorizing and flagging spam")
 
-    st.title("[Show Project](https://colab.research.google.com/drive/1Ut6uHN9oGJudzqqFUyqHsoga7BUp7M7)")   
+    st.subheader("[Show Project](https://colab.research.google.com/drive/1Ut6uHN9oGJudzqqFUyqHsoga7BUp7M7)")   
 
     st.subheader('Tic-Tac-Toe')
     st.write("The Java Tic Tac Toe Game project is a console-based application that allows two players to play the classic Tic Tac Toe game.")
@@ -85,12 +85,7 @@ def show_projects_section():
     st.write("The game includes win-detection logic and ensures valid moves, providing an engaging and interactive experience for players.")
     st.write("This project serves as an ideal way to practice Java programming fundamentals while enjoying a timeless game.")
 
-    if st.button('Show Project', key = 53):
-      js = "window.open('https://replit.com/@BachuAditya/Tic-Tac-Toe')"  
-      js = "window.location.href = 'https://replit.com/@BachuAditya/Tic-Tac-Toe'"      
-      html = '<img src onerror="{}">'.format(js)
-      div = Div(text=html)
-      st.bokeh_chart(div)    
+    st.subheader("[Show Project](https://replit.com/@BachuAditya/Tic-Tac-Toe)")
 
     st.subheader('Covid Data Visualization')
 
@@ -98,11 +93,7 @@ def show_projects_section():
     st.write('The analysis is performed using Python programming language with the help of numpy and pandas libraries for data manipulation and analysis. The plotly library is used for data visualization and creating interactive visualizations that help in understanding the data more effectively.')
     st.write('Furthermore, the project includes an interactive web application created using streamlit library that allows users to explore and interact with the data.')
 
-    if st.button('Show Project', key = 54):
-      js = "window.open('https://github.com/adityabachu/Covid-Data-Visualization-using-R/tree/main/')"  
-      html = '<img src onerror="{}">'.format(js)
-      div = Div(text=html)
-      st.bokeh_chart(div) 
+    st.subheader("[Show Project](https://github.com/adityabachu/Covid-Data-Visualization-using-R/tree/main/)") 
 
     st.subheader('Screen Time Analysis')
 
@@ -110,11 +101,7 @@ def show_projects_section():
     st.write('The analysis is performed using Python programming language with the help of numpy and pandas libraries for data manipulation and analysis. The plotly library is used for data visualization and creating interactive visualizations that help in understanding the data more effectively.')
     st.write('Furthermore, the project includes an interactive web application created using streamlit library that allows users to explore and interact with the data.')
 
-    if st.button('Show Project', key = 55):
-      js = "window.open('https://screen-time-analysis.streamlit.app/')"  # New tab or window
-      html = '<img src onerror="{}">'.format(js)
-      div = Div(text=html)
-      st.bokeh_chart(div) 
+    st.subheader("[Show Project](https://screen-time-analysis.streamlit.app/)")
 
 def show_certifications_section():
     st.title("Certifications")
@@ -179,12 +166,7 @@ def show_certifications_section():
         image = Image.open(cert['image'])
         st.image(image, width = 100)
 
-        if st.button('Show Certification', key = [cert['id']]):
-          js = "window.open(link)"  
-          html = '<img src onerror="{}">'.format(js)
-          div = Div(text=html)
-          st.bokeh_chart(div)
-        st.write("----")
+        st.subheader("[Show Project](cert['link'])")
             
         
      
