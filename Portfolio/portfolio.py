@@ -28,7 +28,7 @@ def main():
                 html = '<img src onerror="{}">'.format(js)
                 div = Div(text=html)
                 st.bokeh_chart(div)  
-            with open("https://github.com/adityabachu/My-Portfolio/blob/main/Portfolio/Aditya%20Bachu%20Resume.pdf", "rb") as file:
+            with open("Portfolio/Aditya Bachu Resume.pdf", "rb") as file:
                  btn = st.download_button(
                     label="Download Resume 📥",
                     data=file,
@@ -112,7 +112,7 @@ def show_certifications_section():
             "title": "IBM Data Science Professional Certification",
             "issuer": "IBM",
             "link": "https://www.coursera.org/account/accomplishments/specialization/certificate/49ZMZL9GQ4ZQ",
-            "image": "Images/IBM_logo_in.jpg"
+            "image": "Portfolio/Images/IBM_logo_in.jpg"
         },
         {
             "id": 3,
