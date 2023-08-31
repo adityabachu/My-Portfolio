@@ -8,13 +8,13 @@ import random
 
 def main():
         st.sidebar.title("Navigation")
-        page = st.sidebar.selectbox("Go to", ["About", "Work Experience", "Certifications", "Projects", "Contact"])
+        page = st.sidebar.selectbox("Go to", ["About", "Certifications", "Projects", "Extra-Curricular Activities", "Contact"])
         
     
         if page == "About":
             show_about_section()
-        elif page == "Work Experience":
-            show_work_experience()
+        elif page == "Extra-Curricular Activities":
+            show_activities()
         elif page == "Certifications":
             show_certifications_section()
         elif page == "Contact":
@@ -43,9 +43,12 @@ def show_about_section():
     st.write("When it comes to coding, I take immense pride in being recognized as a 5 ⭐ Coder at HackerRank. 💻 Solving challenging coding problems has always been my passion, and this achievement truly validates my skills. 🔥")
     st.write("But what truly sets my heart on fire is Artificial Intelligence and Machine Learning. 🧠🤖 Exploring the endless possibilities of these cutting-edge technologies fascinates me beyond words. From diving into natural language processing to unraveling the mysteries of computer vision, I'm constantly driven to push the boundaries of AI and ML. 🌐")
     st.write("So, that's a glimpse of who I am, Google DSC Core Team'22 member, 5 ⭐ Coder at HackerRank, and a tech enthusiast with an insatiable passion for Artificial Intelligence and Machine Learning. 🌟✨ I'm excited to continue my journey, embrace new challenges, and make a lasting impact in the world of technology! 🚀💡")
-def show_work_experience():
+def show_activities():
+    st.subheader("Google DSC Core Team - Data Analytics Lead")    
     image = Image.open('Portfolio/Images/GDSC (3).jpg')
-    st.image(image, caption='Image Caption', use_column_width=True)
+    st.image(image, width = 100)
+    st.write("As a core team member of Google DSC, I played a vital role in organizing and leading various tech-related events, workshops, and sessions for students in collaboration with Google and the local developer community. I contributed to event planning, content creation, and mentoring participants in coding and technology skills. This experience enhanced my leadership, communication, and technical skills, and allowed me to foster a vibrant tech community on campus.")    
+        
     
 
 def show_contact_section():
