@@ -72,6 +72,19 @@ def show_contact_section():
 
 def show_projects_section():
     st.title('Projects')
+
+    st.subheader('Tic-Tac-Toe')
+    st.write("The Java Tic Tac Toe Game project is a console-based application that allows two players to play the classic Tic Tac Toe game.")
+    st.write("Developed in Java, the project features a user-friendly interface for players to take turns and make their moves on the game board.") 
+    st.write("The game includes win-detection logic and ensures valid moves, providing an engaging and interactive experience for players.")
+    st.write("This project serves as an ideal way to practice Java programming fundamentals while enjoying a timeless game.")
+
+    if st.button('Show Project', key = 53):
+      js = "window.open('https://replit.com/@BachuAditya/Tic-Tac-Toe')"  
+      html = '<img src onerror="{}">'.format(js)
+      div = Div(text=html)
+      st.bokeh_chart(div)    
+
     st.subheader('Covid Data Visualization')
 
     st.write('This project is focused on analyzing and visualizing the screen time usage of individuals. The dataset used in this project was sourced from the internet and includes information about the amount of time spent by individuals on screens')
