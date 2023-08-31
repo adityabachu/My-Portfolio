@@ -165,8 +165,10 @@ def show_certifications_section():
         st.write(f"Issued by: {cert['issuer']}")
         image = Image.open(cert['image'])
         st.image(image, width = 100)
+        if st.button("View certificate"):
+                js = window.open(cert[link])
 
-        st.subheader('[Certificate](cert["link"])')
+
             
         
      
