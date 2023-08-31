@@ -105,7 +105,7 @@ def show_certifications_section():
             "title": "Google Data Analytics Professional Certification",
             "issuer": "Google",
             "link": "https://www.coursera.org/account/accomplishments/professional-cert/XR9BAGR3PREC",
-            "image": "C:/Users/varun/OneDrive/Desktop/google.jpg"
+            "image": "Portfolio/Images/google.jpg"
         },
         {
             "id": 2,
@@ -119,35 +119,35 @@ def show_certifications_section():
             "title": "Java Programming",
             "issuer": "Great Learning",
             "link": "https://olympus.mygreatlearning.com/courses/12385/certificate",
-            "image": "C:/Users/varun/OneDrive/Desktop/Portfolio/Images/great_learning.jpeg"
+            "image": "Portfolio/Images/great_learning.jpeg"
         },
         {
             "id": 4,
             "title": "Natural Language Processing",
             "issuer": "Udemy",
             "link": "https://www.udemy.com/certificate/UC-0fce24d7-5327-497c-b4d5-0c992be16a83/",
-            "image": "C:/Users/varun/OneDrive/Desktop/Portfolio/Images/udemy.jpeg"
+            "image": "Portfolio/Images/udemy.jpeg"
         },
         {
             "id": 5,
             "title": "Python Programming With Data Science",
             "issuer": "Udemy",
             "link": "https://www.udemy.com/certificate/UC-11bdda97-d4f6-43c0-9695-7f4331034d06/",
-            "image": "C:/Users/varun/OneDrive/Desktop/Portfolio/Images/udemy.jpeg"
+            "image": "Portfolio/Images/udemy.jpeg"
         },
         {
             "id": 6,
             "title": "Become a Data Analyst",
             "issuer": "LinkedIn",
             "link": "https://www.linkedin.com/learning/certificates/c2dbddcd098471c2e3a82425cd0b6c639d84b0406fbce4545d0a226213530401?trk=backfilled_certificate",
-            "image": "C:/Users/varun/OneDrive/Desktop/Portfolio/Images/linkedin.jpeg"
+            "image": "Portfolio/Images/linkedin.jpeg"
         },
         {
             "id": 7,
             "title": "Master In-Demand Professional Soft Skills",
             "issuer": "LinkedIn",
             "link": "https://www.linkedin.com/learning/certificates/8812255cdb2b50c1c2953c040998575c19cbf27b4bba2107e2bb50c0d14be524?trk=backfilled_certificate",
-            "image": "C:/Users/varun/OneDrive/Desktop/Portfolio/Images/linkedin.jpeg"
+            "image": "Portfolio/Images/linkedin.jpeg"
         },
         
         
