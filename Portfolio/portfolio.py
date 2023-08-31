@@ -23,8 +23,7 @@ def main():
             show_projects_section()
         with st.sidebar:
             components.html('<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="adityabachu" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/adityabachu?trk=profile-badge"></a></div>', height = 360 )
-            if st.button("Github 👨‍💻"):
-                webbrowser.open_new_tab('https://www.github.com/adityabachu')  
+            st.title("[GitHub](https://github.com/adityabachu)")
             with open("Portfolio/Aditya Bachu Resume.pdf", "rb") as file:
                  btn = st.download_button(
                     label="Download Resume 📥",
@@ -47,11 +46,8 @@ def show_activities():
     st.image(image, width = 200)
     st.write("As a core team member of Google DSC, I played a vital role in organizing and leading various tech-related events, workshops, and sessions for students in collaboration with Google and the local developer community. I contributed to event planning, content creation, and mentoring participants in coding and technology skills. This experience enhanced my leadership, communication, and technical skills, and allowed me to foster a vibrant tech community on campus.")    
 
-    if st.button('Website', key = 61):
-      js = "window.open('https://gdsc.community.dev/anurag-university-hyderabad/')"  
-      html = '<img src onerror="{}">'.format(js)
-      div = Div(text=html)
-      st.bokeh_chart(div)
+    st.title('[Website](https://gdsc.community.dev/anurag-university-hyderabad/)')  
+      
 
     if st.button('My Badge ✅', key = 62):
       js = "window.open('https://developers.google.com/profile/badges/community/dsc/2022/core-member?authuser=2')"  
