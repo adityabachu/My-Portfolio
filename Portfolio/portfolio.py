@@ -24,7 +24,7 @@ def main():
         with st.sidebar:
             components.html('<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="adityabachu" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/adityabachu?trk=profile-badge"></a></div>', height = 360 )
             st.title("Coding Profiles")
-            st.write("[LeetCode](https://leetcode.com/user6785Rn/)")
+            st.title("[LeetCode](https://leetcode.com/user6785Rn/)")
             st.title("[GitHub](https://github.com/adityabachu)")
             with open("Portfolio/Aditya Bachu Resume.pdf", "rb") as file:
                  btn = st.download_button(
