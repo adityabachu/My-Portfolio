@@ -22,7 +22,7 @@ def main():
         elif page == "Projects":
             show_projects_section()
         with st.sidebar:
-            components.html('<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="adityabachu" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/adityabachu?trk=profile-badge"></a></div>', height = 360 )
+            components.html('<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="adityabachu" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/adityabachu?trk=profile-badge"></a></div>', height = 350 )
             st.title("[LeetCode](https://leetcode.com/user6785Rn/)")
             st.title("[Geeks for Geeks Profile](https://auth.geeksforgeeks.org/user/adityabachu/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user)")
             st.title("[GitHub](https://github.com/adityabachu)")
