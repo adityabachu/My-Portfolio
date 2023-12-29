@@ -22,7 +22,7 @@ def main():
         elif page == "Projects":
             show_projects_section()
         with st.sidebar:
-            components.html('<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="adityabachu" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/adityabachu?trk=profile-badge"></a></div>', height = 350 )
+            components.html('<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script><div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="adityabachu" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/adityabachu?trk=profile-badge"></a></div>', height = 360 )
             st.title("[LeetCode](https://leetcode.com/user6785Rn/)")
             st.title("[Geeks for Geeks Profile](https://auth.geeksforgeeks.org/user/adityabachu/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user)")
             st.title("[GitHub](https://github.com/adityabachu)")
@@ -41,7 +41,8 @@ def show_about_section():
     st.write("Joining the Google DSC Core Team'22 was a game-changing experience! 🌐 It allowed me to collaborate with brilliant minds, organize impactful events, and cultivate a thriving tech ecosystem. 🎉")
     st.write("In the coding realm, I take immense pride in conquering 75+ challenges on platforms like LeetCode and Geeks for Geeks. 💻 This not only fuels my passion for solving intricate coding problems but also serves as a tangible validation of my skills. 🔥")
     st.write("Artificial Intelligence and Machine Learning are the beating heart of my pursuits. 🧠🤖 Delving into the boundless possibilities of these cutting-edge technologies captivates me endlessly. Whether it's unraveling the intricacies of natural language processing or demystifying the secrets of computer vision, I'm unwaveringly committed to pushing the boundaries of AI and ML. 🌐")
-
+    st.write("So, here's a snapshot of who I am: a Google DSC Core Team'22 member, a dedicated problem solver, a tech enthusiast with an insatiable passion for AI and ML, and an active participant in community events during my academic journey at Anurag University. 🌟✨ I'm thrilled to continue my journey, welcome new challenges with open arms, and leave a lasting impact in the dynamic world of technology! 🚀💡")
+        
 def show_activities():        
     st.subheader("Google DSC Core Team - Data Analytics Lead")    
     image = Image.open('Portfolio/Images/GDSC (3).jpg')
