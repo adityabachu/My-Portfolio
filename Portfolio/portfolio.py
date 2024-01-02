@@ -91,10 +91,9 @@ def show_projects_section():
 
     st.subheader('Covid Data Visualization')
 
-    st.write('This project is focused on analyzing and visualizing the screen time usage of individuals. The dataset used in this project was sourced from the internet and includes information about the amount of time spent by individuals on screens')
-    st.write('The analysis is performed using Python programming language with the help of numpy and pandas libraries for data manipulation and analysis. The plotly library is used for data visualization and creating interactive visualizations that help in understanding the data more effectively.')
-    st.write('Furthermore, the project includes an interactive web application created using streamlit library that allows users to explore and interact with the data.')
+    st.write("The overwhelming amount of data available on Covid-19 and its spread is beyond the ability of humans to absorb. A visualization can make that data more approachable, helping identify patterns and trends in large amounts of information.")
 
+   
     st.subheader("[Show Project](https://github.com/adityabachu/Covid-Data-Visualization-using-R/tree/main/)") 
 
     st.subheader('Screen Time Analysis')
