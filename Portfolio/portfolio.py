@@ -77,7 +77,7 @@ def show_contact_section():
     st.header("Get In Touch With Me!")
     st.write("##")
 
-    # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
+
     contact_form = """
     <form action="https://formsubmit.co/aditya.abhi03@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
