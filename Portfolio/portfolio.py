@@ -97,6 +97,11 @@ def show_contact_section():
 def show_projects_section():
     st.title('Projects')
 
+    st.subheader('Music Player')
+    st.write("Created a Music Player website with a Home Screen Carousel and Single Playlist Screen. Made sure it works well on different devices. Added useful features like a queue on the side and a music player at the bottom for easy access. Also, included audio support for smooth playback, making it enjoyable for users.")
+
+    st.subheader("[Show Project](https://adityabachu-music-player.netlify.app/)")
+        
     st.subheader('Spam Detection')
     st.write("The Spam Detection System project is designed to automatically identify and filter out spam. Using machine learning algorithms and natural language processing techniques, the system analyzes the content and context of the input, determining whether it is legitimate or spam. By accurately categorizing and flagging spam")
 
