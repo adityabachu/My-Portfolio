@@ -97,6 +97,12 @@ def show_contact_section():
 def show_projects_section():
     st.title('Projects')
 
+    st.subheader('Stop Watch')
+    st.write("The Stopwatch Project is a straightforward application built with HTML, CSS, and JavaScript. It provides a simple interface to start, stop, and reset a timer. The project demonstrates basic web development skills, including structuring an HTML document, styling with CSS, and adding interactivity using JavaScript.")
+
+    st.subheader("[Show Project](https://adityabachu.github.io/Stop-Watch/)")
+    st.title('Projects')
+
     st.subheader('Music Player')
     st.write("Created a Music Player website with a Home Screen Carousel and Single Playlist Screen. Made sure it works well on different devices. Added useful features like a queue on the side and a music player at the bottom for easy access. Also, included audio support for smooth playback, making it enjoyable for users.")
 
