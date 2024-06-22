@@ -3,7 +3,6 @@ import streamlit.components.v1 as components
 from PIL import Image
 import pandas as pd
 import webbrowser
-from bokeh.models.widgets import Div
 import random
 
 def main():
