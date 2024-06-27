@@ -125,15 +125,6 @@ def show_projects_section():
 
    
     st.subheader("[Show Project](https://github.com/adityabachu/Covid-Data-Visualization-using-R/tree/main/)") 
-
-    st.subheader('Screen Time Analysis')
-
-    st.write('This project is focused on analyzing and visualizing the screen time usage of individuals. The dataset used in this project was sourced from the internet and includes information about the amount of time spent by individuals on screens')
-    st.write('The analysis is performed using Python programming language with the help of numpy and pandas libraries for data manipulation and analysis. The plotly library is used for data visualization and creating interactive visualizations that help in understanding the data more effectively.')
-    st.write('Furthermore, the project includes an interactive web application created using streamlit library that allows users to explore and interact with the data.')
-
-    st.subheader("[Show Project](https://screen-time-analysis.streamlit.app/)")
-
 def show_certifications_section():
     st.title("Certifications")
     
