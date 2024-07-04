@@ -96,6 +96,11 @@ def show_contact_section():
 def show_projects_section():
     st.title('Projects')
 
+    st.subheader('IMDB Clone')
+    st.write('Built an IMDb clone using HTML, CSS, JavaScript, and Bootstrap. Integrated the OMDb API to fetch and display movie data, including ratings and reviews. Designed a responsive interface for browsing and searching movies, ensuring compatibility across devices.')
+
+    st.subheader("[Show Project](https://adityabachu.github.io/imdb-clone/)")
+
     st.subheader('Stop Watch')
     st.write("The Stopwatch Project is a straightforward application built with HTML, CSS, and JavaScript. It provides a simple interface to start, stop, and reset a timer. The project demonstrates basic web development skills, including structuring an HTML document, styling with CSS, and adding interactivity using JavaScript.")
 
